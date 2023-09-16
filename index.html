@@ -15,7 +15,7 @@
                     </a>
                 </div>
                 <div class="elemento2">
-                    <h2>INDRA'S FIRST <br> INVESTOR CONFERENCE</h2>
+                    <h2>INDRA'S <b>FIRST <br> INVESTOR CONFERENCE</b></h2>
                 </div>
             </div>
             <div class="elemento3">
@@ -26,6 +26,7 @@
 
     <!-- INVERSORES -->
     <div class="inversores">
+        <h2>1D AGENDA</h2>
         <div class="inversor">
             <div class="col-1">
                 <img src="src/fam_fid_1.png">
@@ -55,6 +56,7 @@
 <style>
 
     .fondo {
+        height: 492px;
         background: url(src/header-large.jpg)top center no-repeat;
     }
 
@@ -68,23 +70,30 @@
     .container-left{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        height: 300px;
+        margin-top: 140px;
     }
 
+    .elemento1{
+        margin-right: auto;
+    }
+
+    h2{
+        font-size: 51px;
+    }
 
     .inversores {
-        width: 70%;
-        margin: 0 auto;
+        max-width: 974px;
+        margin: -120px auto;
+        background: #fff;
+        padding: 0 62px;
     }
 
     .inversor{
-        display:flex;
-        flex: 1; /* Hace que cada columna ocupe una parte igual del espacio disponible */
-        border: 1px solid #ccc; /* Añade bordes para separar visualmente las columnas (opcional) */
-        padding: 10px; /* Añade espacio interno (opcional) */
-        margin: 5px; /* Añade margen entre las columnas (opcional) */
+        display: flex;
+        justify-content: space-evenly;
+        gap: 140px;
     }
 
     .fondo .container h2{
