@@ -8,14 +8,23 @@
 <body>
     <div class="fondo">
         <div class="container">
-            <a href="www.indracompany.com">
-                <img src="src/logo-indra.png">
-            </a>
-            <h2>INDRA'S FIRST <br>
-                INVESTOR CONFERENCE</h2>
+            <div class="container-left">
+                <div class="elemento1">
+                    <a href="www.indracompany.com">
+                        <img src="src/logo-indra.png">
+                    </a>
+                </div>
+                <div class="elemento2">
+                    <h2>INDRA'S FIRST <br> INVESTOR CONFERENCE</h2>
+                </div>
+            </div>
+            <div class="elemento3">
+                <img src="src/logo.png">
+            </div>
         </div>
-        <img src="src/logo.png">
     </div>
+
+    <!-- INVERSORES -->
     <div class="inversores">
         <div class="inversor">
             <div class="col-1">
@@ -23,7 +32,7 @@
             </div>
             <div class="col-2">
                 <h3>Our vision</h3>
-                <a href="src/295631-01_-_investor_day_01_our_vision_.pdf">Presentation</a>
+                <a href="src/295631-01_-_investor_day_01_our_vision_.pdf" target="_blank">Presentation</a>
             </div>
             <div class="col-3">
                 <h3>FERNANDO ABRIL-MARTORELL</h3>
@@ -49,6 +58,22 @@
         background: url(src/header-large.jpg)top center no-repeat;
     }
 
+    .container{
+        display: flex; /* Utiliza flexbox para organizar los elementos */
+        justify-content: space-evenly; /* Distribuye los elementos de manera uniforme con espacio entre ellos */
+        align-items: center; /* Centra verticalmente los elementos en el contenedor */
+        height: 300px; /* Altura opcional para el contenedor */
+    }
+
+    .container-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+    }
+
+
     .inversores {
         width: 70%;
         margin: 0 auto;
@@ -60,6 +85,10 @@
         border: 1px solid #ccc; /* Añade bordes para separar visualmente las columnas (opcional) */
         padding: 10px; /* Añade espacio interno (opcional) */
         margin: 5px; /* Añade margen entre las columnas (opcional) */
+    }
+
+    .fondo .container h2{
+        color: #fff;
     }
 
     /* img{
